@@ -67,6 +67,9 @@ public:
     // Getters
     bool getIsUp() const { return isUp; }
     int getSiteId() const { return siteId; }
+    
+    // Get direct access to dataStore for snapshot validation
+    std::map<int, std::vector<Version>>& getDataStore() { return dataStore; }
 };
 
 } // namespace RepCRec

@@ -62,6 +62,7 @@ private:
     bool wasSiteUpContinuously(int siteId, int fromTime, int toTime);
     
     // Cycle detection helpers
+    void createRWEdgesForCommit(std::shared_ptr<Transaction> txn);  // NEW: Creates RW edges at commit time
     bool hasRWCyclePath(const std::string& fromTxnId, const std::string& targetTxnId, 
                         int edgeCount, std::set<std::string>& visited);
     bool hasPathViaRW(const std::string& fromTxnId, const std::string& toTxnId);
