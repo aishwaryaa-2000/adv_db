@@ -86,6 +86,11 @@ void TransactionManager::readFromHomeSite(std::shared_ptr<Transaction> txn, int 
                  version->commitTimestamp, version->writerTransactionId);
     txn->criticalReadSites.insert(homeSite);
     
+    // ✅ FIX: Track first access time for this site
+    if (txn->firstAccessTimePerSite.find(homeSite) == txn->firstAccessTimePerSite.end()) {
+        txn->firstAccessTimePerSite[homeSite] = currentTimestamp;
+    }
+    
     // Track RW edge
     if (version->writerTransactionId != "INITIAL" && 
         version->writerTransactionId != txn->id) {
@@ -131,6 +136,11 @@ void TransactionManager::readReplicated(std::shared_ptr<Transaction> txn, int va
     
     txn->addRead(variableId, chosenSite, version->value,
                  version->commitTimestamp, version->writerTransactionId);
+    
+    // ✅ FIX: Track first access time for this site
+    if (txn->firstAccessTimePerSite.find(chosenSite) == txn->firstAccessTimePerSite.end()) {
+        txn->firstAccessTimePerSite[chosenSite] = currentTimestamp;
+    }
     
     // Track RW edge
     if (version->writerTransactionId != "INITIAL" && 

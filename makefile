@@ -9,6 +9,7 @@ TARGET = repcrec
 # Source files
 SOURCES = main.cpp \
           DataManager.cpp \
+          TransactionManager.cpp \ 
           Parser.cpp
 
 # Header files (for dependency tracking)
