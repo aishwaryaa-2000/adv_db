@@ -27,7 +27,7 @@ run_test() {
     local test_input=$3
     local expected=$4
     
-    echo -e "${YELLOW}=== Test $test_num: $test_name ===${NC}"
+    echo -e "${YELLOW}Test $test_num: $test_name ${NC}"
     result=$(echo "$test_input" | ./repcrec 2>&1)
     
     # Extract commit/abort lines
@@ -475,9 +475,7 @@ end(T3)' "T3 waits, reads x8=88, commits"
 }
 
 # Main execution
-echo -e "${GREEN}========================================${NC}"
-echo -e "${GREEN}RepCRec Test Suite - Professor's Tests${NC}"
-echo -e "${GREEN}========================================${NC}"
+echo -e "${GREEN}RepCRec Test Suite - Tests mentioned in official website${NC}"
 echo ""
 
 if [ $# -eq 0 ]; then
@@ -510,9 +508,7 @@ if [ $# -eq 0 ]; then
     test24
     test25
     
-    echo -e "${GREEN}========================================${NC}"
     echo -e "${GREEN}All tests completed!${NC}"
-    echo -e "${GREEN}========================================${NC}"
 else
     # Run specific test
     case $1 in
