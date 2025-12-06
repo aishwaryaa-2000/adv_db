@@ -1,6 +1,6 @@
 // TransactionManager.h
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Central coordinator for all transactions and sites
 // Manages SSI, Available Copies, and failure/recovery
 

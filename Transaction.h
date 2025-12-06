@@ -1,6 +1,6 @@
 // Transaction.h
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Represents a single transaction with all SSI metadata
 // Side effects: Updates conflict tracking when methods are called
 

@@ -1,6 +1,6 @@
 // ReadInfo.h
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Track information about a read operation for RW conflict detection
 // Side effects: None - data container
 

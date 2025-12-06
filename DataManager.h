@@ -1,6 +1,6 @@
 // DataManager.h
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Manages data storage and versioning at a single site
 // Inputs: Variable IDs, values, timestamps
 // Outputs: Version objects for reads, void for writes

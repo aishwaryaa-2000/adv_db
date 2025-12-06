@@ -1,6 +1,6 @@
 // Version.h
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Represents a single version of a variable with timestamp and writer info
 // Side effects: None - simple data class
 

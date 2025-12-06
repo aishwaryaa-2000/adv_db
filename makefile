@@ -7,7 +7,7 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -O2
 TARGET = repcrec
 
 # Source files
-SOURCES = main.cpp DataManager.cpp TransactionManager.cpp Parser.cpp
+SOURCES = main.cpp DataManager.cpp TransactionManager.cpp Parser.cpp Constants.cpp
 
 # Header files (for dependency tracking)
 HEADERS = Constants.h Version.h WaitInfo.h ReadInfo.h WriteInfo.h \

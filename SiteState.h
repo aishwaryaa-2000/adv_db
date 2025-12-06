@@ -1,6 +1,6 @@
 // SiteState.h
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Track site availability and failure history
 // Side effects: Updates failure history on state changes
 

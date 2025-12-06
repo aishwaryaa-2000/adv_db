@@ -1,6 +1,6 @@
 // main.cpp
-// Author: RepCRec Team
-// Date: December 2024
+// Author: Aishwarya and Archita
+// Date: December 2025
 // Purpose: Main entry point for RepCRec distributed database system
 // Usage: ./repcrec < input.txt
 
